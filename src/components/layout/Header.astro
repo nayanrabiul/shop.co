@@ -15,11 +15,11 @@ import {
         <div class="nav-layout">
             <!-- Logo and hamburger for mobile -->
             <div id="logo-container">
-                <div class="hamburger-menu">
+                <!-- <div class="hamburger-menu">
                     <div></div>
                     <div></div>
                     <div></div>
-                </div>
+                </div> -->
                 <div>
                     <img
                         src="/logo-colored.png"
@@ -45,7 +45,16 @@ import {
         </div>
         <div id="search-box">
             <MagnifyingGlass size={32} weight="bold" />
-            <input type="text" class="search-input" placeholder="Search" />
+            <input
+                type="text"
+                style="
+                    background-color: transparent;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                "
+                class="search-input"
+                placeholder="Search"
+            />
         </div>
     </nav>
     <style>
@@ -79,8 +88,9 @@ import {
             align-items: center;
             max-width: 100%;
             border: 1px solid var(--gray-500);
-            border-radius: 5px;
-            padding: 3px 10px;
+            border-radius: 10px;
+            padding: 5px 10px;
+            background-color: var(--gray-100);
         }
         #search-box:focus-within {
             box-shadow: 0 0 5px var(--primary);
